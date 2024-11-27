@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="Style.css">
+       
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="Sub-header">
+            <nav>
+                <a href="CONTACT"><img src="images/LOGO  BGI M.png" alt="University Logo"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                      <li><a href="BANSAL REVIEW/index.html">HOME</a></li>
+
+                      <li><a href="about.html">ABOUT</a></li>
+                      <li><a href="courses.html">COURSE</a></li>
+                      <li><a href="facilities.html">FACILITIES</a></li>
+                      <li><a href="blog.html">BLOG</a></li>
+                      <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+           <h1>CAMPUS</h1>
+        </section>
+         <!---------------Campus------------>
+
+         <section class="campus">
+          <h1>OUR CAMPUS</h1>
+          <p>
+            In which year did Indira Gandhi National Open University establish?
+            September 1985. The Indira Gandhi National Open University (IGNOU) was
+            established in September 1985 as part of an overall plan for restructuring
+            the system of higher education, and its first students were enrolled in
+            1987.
+          </p>
+          <div class="row">
+            <div class="campus-col">
+              <img src="images/london.png" alt="London Campus" />
+              <div class="layer">
+                <h3>INDORE</h3>
+                
+                  <button class="ero-btn-r-c" type="button">  <a href="mandeep complete/index.html"  >VISIT OUR CAMPUS  </a></button>
+                
+              </div>
+            </div>
+            <div class="campus-col">
+              <img src="images/newyork.png" alt="New York Campus" />
+              <div class="layer">
+                <h3>BHOPAL</h3>
+                <a href="https://bce.ac.in/" target="_blank">
+                  <button class="ero-btn-r-c" type="button">VISIT OUR CAMPUS</button>
+                </a>
+              </div>
+            </div>
+            <div class="campus-col">
+              <img src="images/washington.png" alt="Washington Campus" />
+              <div class="layer">
+                <h3>BHOPAL MANDIDEEP</h3>
+                <a href="https://bce.ac.in/" target="_blank">
+                  <button class="ero-btn-r-c" type="button">VISIT OUR CAMPUS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+      </section>
+        <!--------------- About/Footer ------------>
+
+        <section class="footer">
+            <h4>ABOUT US</h4>
+            <p>What are the best courses in India? Top 20 Most Toughest courses in India: Massive Career Growth <br> This blog includes the top 20 toughest courses in India</p>
+            <div class="icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-google"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-whatsapp"></i>
+            </div>
+            <p>MADE WITH <i class="fa fa-heart-o"></i> BY RAJPRATAP SINGH THAKUR</p>
+        </section>
+
+        <!---------------JavaScript for Toggle Menu------------>
+
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showMenu() {
+                navlinks.style.right = "0";
+            }
+            function hideMenu() {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

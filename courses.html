@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="Sub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/LOGO  BGI M.png" alt="University Logo"
+        /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="campus.html">CAMPUS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="facilities.html">FACILITIES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Courses</h1>
+    </section>
+
+    <!--------------- our courses content ------------>
+
+    <section class="Course">
+      <h1>DEPARTMENTS</h1>
+      <p>
+        BGI offers diverse engineering and management programs, blending theory
+        and practice for career readiness.
+      </p>
+
+      <div class="row">
+        <div class="Course-col">
+          <h3>COMPUTER SCIENCE & ENGINEERING</h3>
+          <p>
+            Explore Computer Science & Engineering at BGI, where theory meets
+            practice, fostering innovation and preparing you for a tech-driven
+            future.
+          </p>
+        </div>
+
+        <div class="Course-col">
+          <h3>INFORMATION TECHONOLOGY</h3>
+          <p>
+            Delve into Information Technology at BGI, blending theory and
+            practical skills to equip you for dynamic careers in the tech
+            industry
+          </p>
+        </div>
+
+        <div class="Course-col">
+          <h3>ELECTRONIC & COMMUNICATION ENGINEERING</h3>
+          <p>
+            Engage in Electronic & Communication Engineering at BGI, combining
+            theoretical knowledge with hands-on experience for careers in
+            advanced technology.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="Course-col">
+          <h3>MECHANICAL ENGINEERING</h3>
+          <p>
+            Study Mechanical Engineering at BGI, where theoretical principles
+            meet practical applications to prepare you for innovative
+            engineering careers
+          </p>
+        </div>
+
+        <div class="Course-col">
+          <h3>CIVIL ENGINEERING</h3>
+          <p>
+            Pursue Civil Engineering at BGI, integrating theory and practice to
+            equip you for impactful careers in infrastructure and development.
+          </p>
+        </div>
+
+        <div class="Course-col">
+          <h3>MANAGEMENT</h3>
+          <p>
+            Explore Management at BGI, blending theoretical concepts with
+            practical applications to prepare you for leadership roles in
+            various industries
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--------------- Footer ------------>
+
+    <section class="footer">
+      <h4>Avout Us</h4>
+      <p>
+        What are the best courses in India? Top 20 Most Toughest courses in
+        India: Massive Career Growth <br />
+        This blog includes the top 20 toughest courses in India
+      </p>
+      <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-google"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-whatsapp"></i>
+      </div>
+      <p>MADE WITH <i class="fa fa-heart-o"></i> BY NITIN THAKUR</p>
+    </section>
+
+    <!---------------JavaScript for Toggle Menu------------>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showMenu() {
+        navlinks.style.right = "0";
+      }
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="Sub-header">
+      <nav>
+        <a href="CONTACT"
+          ><img src="images/LOGO  BGI M.png" alt="University Logo"
+        /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="campus.html">CAMPUS</a></li>
+            <li><a href="courses.html">COURSE</a></li>
+            <li><a href="facilities.html">FACILITIES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!--------------- About content ------------>
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We Are India’s Best Engineering College</h1>
+          <p>
+            The Bansal Group of Institutes (BGI) stands as a beacon of
+            educational excellence in Central India, committed to providing
+            exceptional learning opportunities since its establishment in 2000.
+            Our mission is to equip students with the knowledge, skills, and
+            experiences they need to thrive in today’s fast-paced and
+            ever-evolving world.
+          </p>
+          <p>
+            At BGI, we pride ourselves on our focus on academic excellence and
+            practical skill-building, making us a premier destination for
+            students seeking a comprehensive education. Our dedicated team of
+            experienced and highly qualified professionals fosters a supportive
+            learning environment, ensuring that every student can achieve their
+            full potential.
+          </p>
+          <p>
+            We offer a diverse range of programs, including undergraduate and
+            postgraduate courses in engineering and management, tailored to meet
+            the demands of the industry.
+          </p>
+          <p>
+            Our state-of-the-art facilities include modern classrooms, advanced
+            laboratories, and a well-stocked library, all designed to enhance
+            the learning experience. However, our commitment to student
+            development extends beyond academics. We emphasize holistic growth
+            through a variety of extracurricular activities, including sports,
+            cultural events, and community service initiatives.
+          </p>
+          <p>
+            At the Bansal Group of Institutes, we believe in nurturing
+            well-rounded individuals who are not only academically proficient
+            but also socially responsible and ready to make a positive impact in
+            the world.
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg" alt="Sushila Devi Bansal College" />
+        </div>
+      </div>
+    </section>
+
+    <!--------------- About/Footer ------------>
+
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>
+        What are the best courses in India? Top 20 Most Toughest courses in
+        India: Massive Career Growth <br />
+        This blog includes the top 20 toughest courses in India
+      </p>
+      <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-google"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-whatsapp"></i>
+      </div>
+      <p>MADE WITH <i class="fa fa-heart-o"></i> BY NITIN THAKUR</p>
+    </section>
+
+    <!---------------JavaScript for Toggle Menu------------>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showMenu() {
+        navlinks.style.right = "0";
+      }
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="Sub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/LOGO  BGI M.png" alt="University Logo"
+        /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="campus.html">CAMPUS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSE</a></li>
+            <li><a href="facilities.html">FACILITIES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <!--------------- contact us Location from google MAp ------------>
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.0234254612806!2d75.78475147507844!3d22.59779297947379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962f99e5832a20b%3A0x7b44dc2ea08744eb!2sSushila%20Devi%20Bansal%20College%2C%20BGI%20Indore!5e0!3m2!1sen!2sin!4v1727300337403!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!--------------- contact us Details  ------------>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>
+                Umaria, A. B. Road, Near Rau, Indore, Madhya Pradesh – 453331
+              </h5>
+              <p>Monday to Saturday</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+91 9303482602</h5>
+              <p>indore , Madhya pradesh</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>support@adymyze.site</h5>
+              <p>Email us for more Queries</p>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Enter Your name..." />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your email Adderess..."
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter Your Subject..."
+            />
+            <textarea rows="8" name="message" placeholder="Message"></textarea>
+            <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--------------- About/Footer ------------>
+
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>
+        What are the best courses in India? Top 20 Most Toughest courses in
+        India: Massive Career Growth <br />
+        This blog includes the top 20 toughest courses in India
+      </p>
+      <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-google"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-whatsapp"></i>
+      </div>
+      <p>MADE WITH <i class="fa fa-heart-o"></i> BY NITIN THAKUR</p>
+    </section>
+
+    <!---------------JavaScript for Toggle Menu------------>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showMenu() {
+        navlinks.style.right = "0";
+      }
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
